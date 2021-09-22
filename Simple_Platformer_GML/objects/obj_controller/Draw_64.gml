@@ -2,6 +2,9 @@ draw_set_colour($FFBFFBFF)
 draw_rectangle(50, 5, 150, 45, false)
 
 /*TODO Write Lives code here */
+for (var i = 0; i < lives; i++) {
+	draw_sprite(spr_life, 0, (50 + 24 * i), 15)
+}
 
 draw_set_halign(fa_left)
 draw_text(55, 55, "Score: " + string(score))
